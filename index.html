@@ -5,22 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>The World Games Show</title>
   <meta name="description" content="Join our Zoom-based party game. Register fast, pay securely, and compete to win the prize pot!" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'; }
-    .glass { backdrop-filter: blur(10px); background: rgba(255,255,255,.7); }
-    .input { @apply w-full rounded-xl border border-gray-300 p-3 focus:outline-none focus:ring-2 focus:ring-indigo-500; }
-    .label { @apply text-sm font-semibold text-gray-700; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
+        'Apple Color Emoji', 'Segoe UI Emoji';
+    }
+    .glass {
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.7);
+    }
+    .input {
+      @apply w-full rounded-xl border border-gray-300 p-3 focus:outline-none focus:ring-2 focus:ring-indigo-500;
+    }
+    .label {
+      @apply text-sm font-semibold text-gray-700;
+    }
   </style>
 </head>
 <body class="bg-gradient-to-br from-indigo-50 to-sky-50 text-gray-900">
   <!-- Header -->
   <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b">
     <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-      <a href="#" class="flex items-center gap-2 font-bold text-xl"><span class="inline-block h-8 w-8 rounded-2xl bg-indigo-600"></span>The World Games Show</a>
+      <a href="#" class="flex items-center gap-2 font-bold text-xl">
+        <span class="inline-block h-8 w-8 rounded-2xl bg-indigo-600"></span>The World Games Show
+      </a>
       <nav class="hidden md:flex items-center gap-6 text-sm">
         <a href="#how" class="hover:text-indigo-600">How it works</a>
         <a href="#register" class="hover:text-indigo-600">Register</a>
@@ -33,19 +45,47 @@
     <div class="max-w-6xl mx-auto px-4 pt-12 pb-6 grid md:grid-cols-2 gap-10 items-center">
       <div>
         <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Play, Laugh & Win 💸 — All on Zoom</h1>
-        <p class="mt-4 text-lg text-gray-700">A fast-paced, family-friendly game session on Zoom. Register below, pay the entry fee securely, and you’re in. Winner takes the prize pot!</p>
+        <p class="mt-4 text-lg text-gray-700">
+          A fast-paced, family-friendly game session on Zoom. Register below, pay the entry fee
+          securely, and you’re in. Winner takes the prize pot!
+        </p>
         <div class="mt-6 flex gap-3">
           <a href="#register" class="bg-indigo-600 text-white px-5 py-3 rounded-xl shadow hover:bg-indigo-700">Quick Register</a>
         </div>
-        <p class="mt-3 text-sm text-gray-600">Next games: <strong>August 17 - August 30, 2025 7:00 PM ET</strong> • Zoom link and date/time of your game is sent after payment.</p>
+        <p class="mt-3 text-sm text-gray-600">
+          Next games: <strong>August 17 - August 30, 2025 7:00 PM ET</strong> • Zoom link and
+          date/time of your game is sent after payment.
+        </p>
       </div>
       <div class="relative">
         <div class="grid grid-cols-3 gap-3">
-          <img alt="Friends laughing on a video call" class="rounded-2xl shadow object-cover h-40 w-full" src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop" />
-          <img alt="People celebrating with confetti" class="rounded-2xl shadow object-cover h-40 w-full" src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?q=80&w=800&auto=format&fit=crop" />
-          <img alt="Winner holding a trophy" class="rounded-2xl shadow object-cover h-40 w-full" src="https://images.unsplash.com/photo-1521417531039-3388f1dc9b45?q=80&w=800&auto=format&fit=crop" loading="lazy" />
-          <img alt="Team high-five on call" class="rounded-2xl shadow object-cover h-40 w-full col-span-2" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1000&auto=format&fit=crop" />
-          <img alt="Smiling player with headset" class="rounded-2xl shadow object-cover h-40 w-full" src="https://images.unsplash.com/photo-1544717305-9b805be2f7b1?q=80&w=800&auto=format&fit=crop" loading="lazy" />
+          <img
+            alt="Friends laughing on a video call"
+            class="rounded-2xl shadow object-cover h-40 w-full"
+            src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop"
+          />
+          <img
+            alt="People celebrating with confetti"
+            class="rounded-2xl shadow object-cover h-40 w-full"
+            src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?q=80&w=800&auto=format&fit=crop"
+          />
+          <img
+            alt="Winner holding a trophy"
+            class="rounded-2xl shadow object-cover h-40 w-full"
+            src="https://images.unsplash.com/photo-1521417531039-3388f1dc9b45?q=80&w=800&auto=format&fit=crop"
+            loading="lazy"
+          />
+          <img
+            alt="Team high-five on call"
+            class="rounded-2xl shadow object-cover h-40 w-full col-span-2"
+            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1000&auto=format&fit=crop"
+          />
+          <img
+            alt="Smiling player with headset"
+            class="rounded-2xl shadow object-cover h-40 w-full"
+            src="https://images.unsplash.com/photo-1544717305-9b805be2f7b1?q=80&w=800&auto=format&fit=crop"
+            loading="lazy"
+          />
         </div>
       </div>
     </div>
@@ -62,12 +102,16 @@
       <div class="glass rounded-2xl p-6 shadow">
         <div class="text-2xl">2️⃣</div>
         <h3 class="mt-2 font-bold text-xl">Pay Securely</h3>
-        <p class="text-gray-700 mt-2">Pay the entry fee on a PCI-compliant payment page powered by Stripe.</p>
+        <p class="text-gray-700 mt-2">
+          Pay the entry fee on a PCI-compliant payment page powered by Stripe.
+        </p>
       </div>
       <div class="glass rounded-2xl p-6 shadow">
         <div class="text-2xl">3️⃣</div>
         <h3 class="mt-2 font-bold text-xl">Join & Win</h3>
-        <p class="text-gray-700 mt-2">Receive the Zoom link by email after payment. Compete to win the prize pot!</p>
+        <p class="text-gray-700 mt-2">
+          Receive the Zoom link by email after payment. Compete to win the prize pot!
+        </p>
       </div>
     </div>
   </section>
@@ -77,8 +121,16 @@
     <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-start">
       <div>
         <h2 class="text-3xl font-extrabold">Quick Registration</h2>
-        <p class="text-gray-700 mt-2">Fill this in first. If you already paid before, use the same email so we can match your payment automatically.</p>
-        <form id="regForm" class="mt-6 grid grid-cols-1 gap-4" action="https://formspree.io/f/xjkojplo" method="POST">
+        <p class="text-gray-700 mt-2">
+          Fill this in first. If you already paid before, use the same email so we can match your
+          payment automatically.
+        </p>
+        <form
+          id="regForm"
+          class="mt-6 grid grid-cols-1 gap-4"
+          action="https://formspree.io/f/xjkojplo"
+          method="POST"
+        >
           <div>
             <label class="label" for="name">Full name</label>
             <input id="name" name="name" required class="input" />
@@ -89,11 +141,24 @@
           </div>
           <div>
             <label class="label" for="phone">Phone</label>
-            <input id="phone" name="phone" type="tel" inputmode="tel" pattern="[+0-9\-() ]+" placeholder="+1 647 555 0123" class="input" />
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              inputmode="tel"
+              pattern="[+0-9\-() ]+"
+              placeholder="+1 647 555 0123"
+              class="input"
+            />
           </div>
           <div>
             <label class="label" for="hobbies">Hobbies</label>
-            <input id="hobbies" name="hobbies" class="input" placeholder="Board games, quizzes, music…" />
+            <input
+              id="hobbies"
+              name="hobbies"
+              class="input"
+              placeholder="Board games, quizzes, music…"
+            />
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
@@ -112,8 +177,10 @@
           </div>
 
           <div class="flex items-center gap-3 mt-1">
-            <input id="consent" name="consent" type="checkbox" required class="h-4 w-4" />
-            <label for="consent" class="text-sm text-gray-700">I agree to receive the Zoom link & updates for this event.</label>
+            <input id="consent" type="checkbox" required class="h-4 w-4" />
+            <label for="consent" class="text-sm text-gray-700">
+              I agree to receive the Zoom link & updates for this event.
+            </label>
           </div>
 
           <div class="flex items-center gap-3 mt-1">
@@ -122,21 +189,39 @@
           </div>
 
           <div class="flex items-center gap-3 mt-1">
-            <input id="canadianResident" name="canadianResident" type="checkbox" required class="h-4 w-4" />
-            <label for="canadianResident" class="text-sm text-gray-700">I confirm that I am a Canadian resident.</label>
+            <input
+              id="canadianResident"
+              name="canadianResident"
+              type="checkbox"
+              required
+              class="h-4 w-4"
+            />
+            <label for="canadianResident" class="text-sm text-gray-700"
+              >I confirm that I am a Canadian resident.</label
+            >
           </div>
 
           <div class="flex items-center gap-3 mt-1">
-            <input id="englishProficient" name="englishProficient" type="checkbox" required class="h-4 w-4" />
-            <label for="englishProficient" class="text-sm text-gray-700">I confirm that I can speak and understand English.</label>
+            <input
+              id="englishProficient"
+              name="englishProficient"
+              type="checkbox"
+              required
+              class="h-4 w-4"
+            />
+            <label for="englishProficient" class="text-sm text-gray-700"
+              >I confirm that I can speak and understand English.</label
+            >
           </div>
 
           <div class="flex items-center gap-3 mt-1">
             <input id="videoConsent" name="videoConsent" type="checkbox" required class="h-4 w-4" />
-            <label for="videoConsent" class="text-sm text-gray-700">I consent to my video being uploaded to social media.</label>
+            <label for="videoConsent" class="text-sm text-gray-700">
+              I consent to my video being uploaded to social media.
+            </label>
           </div>
 
-          <h3 style="margin-top:20px;">Availability</h3>
+          <h3 style="margin-top: 20px;">Availability</h3>
           <p>Select one or both dates you are available:</p>
 
           <label for="dateSelect">Choose Date:</label>
@@ -146,33 +231,55 @@
             <option value="2025-08-16">Saturday, August 16, 2025 (1-3 PM)</option>
           </select>
 
-          <button type="button" id="addAvailabilityBtn" class="mt-2 bg-indigo-600 text-white px-5 py-3 rounded-xl hover:bg-indigo-700">Add Date & Time</button>
+          <button
+            type="button"
+            id="addAvailabilityBtn"
+            class="mt-2 bg-indigo-600 text-white px-5 py-2 rounded-xl hover:bg-indigo-700"
+          >
+            Add Date & Time
+          </button>
 
-          <div class="availability-list mt-3" id="availabilityList"></div>
+          <div class="availability-list" id="availabilityList"></div>
 
-          <button id="submitBtn" disabled class="mt-6 bg-gray-400 text-white px-5 py-3 rounded-xl cursor-not-allowed" type="submit">Submit Registration</button>
+          <button
+            id="submitBtn"
+            class="mt-4 bg-gray-400 cursor-not-allowed text-white px-5 py-3 rounded-xl"
+            type="submit"
+            disabled
+          >
+            Submit Registration
+          </button>
           <p class="text-xs text-gray-500">Your info is used only for this event. No spam.</p>
         </form>
       </div>
+    </div>
+  </section>
 
-      <!-- Payment Section (Hidden initially) -->
-      <div id="pay" class="glass rounded-2xl p-6 shadow sticky top-24" style="display:none;">
-        <h3 class="text-2xl font-bold">Pay Entry Fee</h3>
-        <p class="text-gray-700 mt-2">Secure payment is handled by Stripe on their hosted checkout page.</p>
-        <ul class="mt-3 text-sm text-gray-700 list-disc list-inside">
-          <li>Total due: <strong>$XX.XX</strong></li>
-          <li>Use the <strong>same email</strong> you registered with.</li>
-          <li>Non-refundable if you miss the start time.</li>
-        </ul>
-        <a href="https://buy.stripe.com/YOUR_PAYMENT_LINK" class="mt-5 inline-flex items-center justify-center w-full bg-indigo-600 text-white px-5 py-3 rounded-xl shadow hover:bg-indigo-700">Pay Now</a>
-        <p class="text-xs text-gray-500 mt-2">After payment, you’ll be redirected to a confirmation page and receive the Zoom link by email.</p>
-      </div>
+  <!-- Payment Section (Hidden initially) -->
+  <section id="paymentSection" class="py-12 bg-white max-w-6xl mx-auto px-4" style="display:none;">
+    <div class="glass rounded-2xl p-6 shadow">
+      <h3 class="text-2xl font-bold mb-4">Thank you for registering!</h3>
+      <p class="text-gray-700 mb-4">
+        Please proceed with your payment to secure your spot in the game.
+      </p>
+      <a
+        href="https://buy.stripe.com/YOUR_PAYMENT_LINK"
+        class="inline-flex items-center justify-center w-full max-w-xs bg-indigo-600 text-white px-6 py-3 rounded-xl shadow hover:bg-indigo-700"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Pay Now</a
+      >
+      <p class="text-xs text-gray-500 mt-3">
+        After payment, you’ll be redirected to a confirmation page and receive the Zoom link by email.
+      </p>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="border-t">
-    <div class="max-w-6xl mx-auto px-4 py-10 text-sm text-gray-600 flex flex-col md:flex-row gap-3 md:items-center md:justify-between">
+    <div
+      class="max-w-6xl mx-auto px-4 py-10 text-sm text-gray-600 flex flex-col md:flex-row gap-3 md:items-center md:justify-between"
+    >
       <p>© <span id="year"></span> The World Games Show. All rights reserved.</p>
       <div class="flex gap-4">
         <a href="#" class="hover:text-gray-900">Terms</a>
@@ -189,15 +296,23 @@
       <div class="mt-6 space-y-4">
         <details class="p-4 bg-white rounded-2xl shadow">
           <summary class="font-semibold">How do I get the Zoom link?</summary>
-          <p class="mt-2 text-gray-700">We email it after successful payment (to the email you registered with) with date and time for your game session</p>
+          <p class="mt-2 text-gray-700">
+            We email it after successful payment (to the email you registered with) with date and
+            time for your game session
+          </p>
         </details>
         <details class="p-4 bg-white rounded-2xl shadow">
           <summary class="font-semibold">Is payment secure?</summary>
-          <p class="mt-2 text-gray-700">Yes. We never see your card details. Stripe, a PCI‑compliant provider, handles the checkout.</p>
+          <p class="mt-2 text-gray-700">
+            Yes. We never see your card details. Stripe, a PCI‑compliant provider, handles the
+            checkout.
+          </p>
         </details>
         <details class="p-4 bg-white rounded-2xl shadow">
           <summary class="font-semibold">How is the winner decided?</summary>
-          <p class="mt-2 text-gray-700">The host tracks scores during the game. In a tie, we run a quick tiebreaker round.</p>
+          <p class="mt-2 text-gray-700">
+            The host tracks scores during the game. In a tie, we run a quick tiebreaker round.
+          </p>
         </details>
         <details class="p-4 bg-white rounded-2xl shadow">
           <summary class="font-semibold">What is the eligibilty?</summary>
@@ -208,14 +323,23 @@
         </details>
         <details class="p-4 bg-white rounded-2xl shadow">
           <summary class="font-semibold">How are players selected?</summary>
-          <p class="mt-2 text-gray-700">* Competitors are selected from the pool of applicants for each event.</p>
-          <p class="mt-2 text-gray-700">* Selection involves a random draw combined with a review to ensure a fun, high-energy game.</p>
+          <p class="mt-2 text-gray-700">*Competitors are selected from the pool of applicants for each event.</p>
+          <p class="mt-2 text-gray-700">
+            * Selection involves a random draw combined with a review to ensure a fun, high-energy
+            game.
+          </p>
           <p class="mt-2 text-gray-700">* Selected players receive an exclusive zoom link for their game session.</p>
         </details>
         <details class="p-4 bg-white rounded-2xl shadow">
           <summary class="font-semibold">Do you have a waitlist?</summary>
-          <p class="mt-2 text-gray-700">* Based on the number of game sessions we have planned ahead, we select the required number of players first and place all other players in the waitlist.</p>
-          <p class="mt-2 text-gray-700">* If a selected player does not confirm their participation via email on time, the spot is offered to the next person on the waitlist.</p>
+          <p class="mt-2 text-gray-700">
+            * Based on the number of game sessions we have planned ahead, we select the required
+            number of players first and place all other players in the waitlist.
+          </p>
+          <p class="mt-2 text-gray-700">
+            * If a selected player does not confirm their participation via email on time, the spot
+            is offered to the next person on the waitlist.
+          </p>
         </details>
       </div>
     </div>
@@ -224,17 +348,8 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Calculate age from DOB string YYYY-MM-DD
-    function calculateAge(dob) {
-      const birthDate = new Date(dob);
-      const today = new Date();
-      let age = today.getFullYear() - birthDate.getFullYear();
-      const m = today.getMonth() - birthDate.getMonth();
-      if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-        age--;
-      }
-      return age;
-    }
+    // Store availability dates selected
+    const availability = [];
 
     // Map dates to time slots
     function getTimeSlot(dateStr) {
@@ -243,40 +358,61 @@
       return '';
     }
 
-    const availability = [];
-    const availabilityList = document.getElementById('availabilityList');
-    const addAvailabilityBtn = document.getElementById('addAvailabilityBtn');
     const dateSelect = document.getElementById('dateSelect');
+    const addAvailabilityBtn = document.getElementById('addAvailabilityBtn');
+    const availabilityList = document.getElementById('availabilityList');
+    const submitBtn = document.getElementById('submitBtn');
 
-    // Update submit button enabled/disabled state
+    // Enable/disable submit button based on form validation
     function updateSubmitButtonState() {
       const name = document.getElementById('name').value.trim();
       const email = document.getElementById('email').value.trim();
       const city = document.getElementById('city').value.trim();
       const country = document.getElementById('country').value.trim();
       const dob = document.getElementById('dob').value;
+      const ageValid = calculateAge(dob) >= 18;
 
-      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      const ageValid = dob && calculateAge(dob) >= 18;
-      const emailValid = emailPattern.test(email);
+      const consents = [
+        'consent',
+        'over18',
+        'canadianResident',
+        'englishProficient',
+        'videoConsent',
+      ].every((id) => document.getElementById(id).checked);
 
-      const consentsOk = ['consent', 'over18', 'canadianResident', 'englishProficient', 'videoConsent']
-        .every(id => document.getElementById(id).checked);
+      const hasAvailability = availability.length > 0;
 
-      const availabilityOk = availability.length > 0;
-
-      const allGood = name && emailValid && city && country && ageValid && consentsOk && availabilityOk;
-
-      const submitBtn = document.getElementById('submitBtn');
-      if (allGood) {
+      if (
+        name &&
+        email &&
+        city &&
+        country &&
+        dob &&
+        ageValid &&
+        consents &&
+        hasAvailability
+      ) {
         submitBtn.disabled = false;
         submitBtn.classList.remove('bg-gray-400', 'cursor-not-allowed');
-        submitBtn.classList.add('bg-gray-900', 'cursor-pointer');
+        submitBtn.classList.add('bg-gray-900', 'hover:bg-black');
       } else {
         submitBtn.disabled = true;
         submitBtn.classList.add('bg-gray-400', 'cursor-not-allowed');
-        submitBtn.classList.remove('bg-gray-900', 'cursor-pointer');
+        submitBtn.classList.remove('bg-gray-900', 'hover:bg-black');
       }
+    }
+
+    // Calculate age from DOB string (yyyy-mm-dd)
+    function calculateAge(dob) {
+      if (!dob) return 0;
+      const birthDate = new Date(dob);
+      const today = new Date();
+      let age = today.getFullYear() - birthDate.getFullYear();
+      const m = today.getMonth() - birthDate.getMonth();
+      if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+      }
+      return age;
     }
 
     // Add availability date/time to list
@@ -292,19 +428,23 @@
       }
       availability.push(selectedDate);
 
-      // Create a removable item
+      // Update display
+      const timeSlot = getTimeSlot(selectedDate);
       const div = document.createElement('div');
-      div.className = 'flex items-center justify-between bg-indigo-100 rounded-md p-2 mt-2';
-      div.textContent = `${new Date(selectedDate).toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })} (${getTimeSlot(selectedDate)})`;
+      div.textContent = `${selectedDate} (${timeSlot})`;
+      div.classList.add('py-1', 'px-2', 'rounded', 'bg-indigo-100', 'text-indigo-700', 'inline-block', 'mr-2', 'mb-2');
 
+      // Add remove button
       const removeBtn = document.createElement('button');
       removeBtn.type = 'button';
-      removeBtn.textContent = 'Remove';
-      removeBtn.className = 'ml-3 text-red-600 hover:text-red-800';
+      removeBtn.textContent = '×';
+      removeBtn.classList.add('ml-2', 'text-red-600', 'font-bold');
       removeBtn.addEventListener('click', () => {
         availabilityList.removeChild(div);
         const index = availability.indexOf(selectedDate);
-        if (index > -1) availability.splice(index, 1);
+        if (index > -1) {
+          availability.splice(index, 1);
+        }
         updateSubmitButtonState();
       });
 
@@ -314,27 +454,56 @@
       updateSubmitButtonState();
     });
 
-    // Listen for input and change events on required fields and checkboxes
-    const fieldsToWatch = ['name', 'email', 'city', 'country', 'dob',
-                           'consent', 'over18', 'canadianResident', 'englishProficient', 'videoConsent'];
-
-    fieldsToWatch.forEach(id => {
-      const el = document.getElementById(id);
-      if (!el) return;
-      el.addEventListener('input', updateSubmitButtonState);
-      el.addEventListener('change', updateSubmitButtonState);
+    // Add listeners to inputs and checkboxes to update submit button
+    document.querySelectorAll('#regForm input, #regForm select').forEach((input) => {
+      input.addEventListener('input', updateSubmitButtonState);
+      input.addEventListener('change', updateSubmitButtonState);
     });
 
-    // Initialize button state on page load
-    updateSubmitButtonState();
-
-    // Optional: prevent form submission if button disabled (extra safety)
+    // Handle form submission via fetch to Formspree
     document.getElementById('regForm').addEventListener('submit', (e) => {
-      if (document.getElementById('submitBtn').disabled) {
-        e.preventDefault();
+      e.preventDefault();
+
+      if (submitBtn.disabled) {
         alert('Please complete all required fields, consents, and add your availability dates before submitting.');
+        return;
       }
+
+      const form = e.target;
+      const formData = new FormData(form);
+
+      // Append availability dates as a single comma-separated field
+      formData.append('availability', availability.join(', '));
+
+      fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          Accept: 'application/json',
+        },
+      })
+        .then((response) => {
+          if (response.ok) {
+            // Show payment section
+            document.getElementById('paymentSection').style.display = 'block';
+
+            // Scroll to payment section smoothly
+            document.getElementById('paymentSection').scrollIntoView({ behavior: 'smooth' });
+
+            // Optionally disable form to prevent resubmission
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Registration Submitted';
+          } else {
+            alert('Oops! There was a problem submitting your form. Please try again.');
+          }
+        })
+        .catch(() => {
+          alert('Oops! There was a problem submitting your form. Please try again.');
+        });
     });
+
+    // Initial button state
+    updateSubmitButtonState();
   </script>
 </body>
 </html>
