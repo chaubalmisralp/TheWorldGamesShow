@@ -361,9 +361,9 @@
   <!-- Contact Modal -->
   <div id="contactModal" class="modal">
     <div class="modal-content">
-      <span class="close" id="closeModal">&times;</span>
+      <span class="close" id="modalCloseBtn">&times;</span>
       <h3>Contact Us</h3>
-      <p>Email: <a href="mailto:contact@howdyearth.com">contact@howdyearth.com</a></p>
+      <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
     </div>
   </div>
 
@@ -582,25 +582,28 @@
 
     // Initial button state
     updateSubmitButtonState();
+  </script>
 
-    // Modal handling
-    const contactBtn = document.getElementById('contactBtn');
-    const contactModal = document.getElementById('contactModal');
-    const closeModal = document.getElementById('closeModal');
+   <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const contactBtn = document.getElementById('contactBtn');
+      const contactModal = document.getElementById('contactModal');
+      const closeBtn = document.getElementById('modalCloseBtn');
 
-    contactBtn.onclick = () => {
-      contactModal.style.display = 'block';
-    }
+      contactBtn.addEventListener('click', () => {
+        contactModal.style.display = 'block';
+      });
 
-    closeModal.onclick = () => {
-      contactModal.style.display = 'none';
-    }
-
-    window.onclick = (event) => {
-      if (event.target === contactModal) {
+      closeBtn.addEventListener('click', () => {
         contactModal.style.display = 'none';
-      }
-    }
+      });
+
+      window.addEventListener('click', (event) => {
+        if (event.target === contactModal) {
+          contactModal.style.display = 'none';
+        }
+      });
+    });
   </script>
 </body>
 </html>
