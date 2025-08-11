@@ -316,6 +316,15 @@
     </div>
   </footer>
 
+  <!-- Contact Modal -->
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h3>Contact Us</h3>
+      <p>Email: <a href="mailto:contact@howdyearth.com">contact@howdyearth.com</a></p>
+    </div>
+  </div>
+
   <!-- FAQ -->
   <section class="py-12">
     <div class="max-w-3xl mx-auto px-4">
@@ -531,6 +540,25 @@
 
     // Initial button state
     updateSubmitButtonState();
+
+    // Modal handling
+    const contactBtn = document.getElementById('contactBtn');
+    const contactModal = document.getElementById('contactModal');
+    const closeModal = document.getElementById('closeModal');
+
+    contactBtn.onclick = () => {
+      contactModal.style.display = 'block';
+    }
+
+    closeModal.onclick = () => {
+      contactModal.style.display = 'none';
+    }
+
+    window.onclick = (event) => {
+      if (event.target === contactModal) {
+        contactModal.style.display = 'none';
+      }
+    }
   </script>
 </body>
 </html>
