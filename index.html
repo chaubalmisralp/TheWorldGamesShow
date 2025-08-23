@@ -557,20 +557,20 @@
       removeBtn.type = 'button';
       removeBtn.textContent = '×';
       removeBtn.classList.add('ml-2', 'text-red-600', 'font-bold');
-      // removeBtn.addEventListener('click', () => {
-      //   availabilityList.removeChild(div);
-      //   const index = availability.indexOf(selectedDate);
-      //   if (index > -1) {
-      //     availability.splice(index, 1);
-      //   }
-      //   updateSubmitButtonState();
-      // });
+    //   removeBtn.addEventListener('click', () => {
+    //     availabilityList.removeChild(div);
+    //     const index = availability.indexOf(selectedDate);
+    //     if (index > -1) {
+    //       availability.splice(index, 1);
+    //     }
+    //     updateSubmitButtonState();
+    //   });
 
-      div.appendChild(removeBtn);
-      availabilityList.appendChild(div);
+    //   div.appendChild(removeBtn);
+    //   availabilityList.appendChild(div);
 
-      updateSubmitButtonState();
-    });
+    //   updateSubmitButtonState();
+    // });
 
     // Add listeners to inputs and checkboxes to update submit button
     document.querySelectorAll('#regForm input, #regForm select').forEach((input) => {
