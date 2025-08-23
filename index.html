@@ -314,7 +314,7 @@
             </label>
           </div>
 
-          <h3 style="margin-top: 20px;">Availability</h3>
+<!--           <h3 style="margin-top: 20px;">Availability</h3>
           <p>Select one or both dates you are available:</p>
 
           <label for="dateSelect">Choose Date:</label>
@@ -334,7 +334,7 @@
             Add Date & Time
           </button>
 
-          <div class="availability-list" id="availabilityList"></div>
+          <div class="availability-list" id="availabilityList"></div> -->
 
           <button
             id="submitBtn"
@@ -344,7 +344,7 @@
           >
             Submit Registration
           </button>
-          <p class="text-xs text-gray-500">Your info is used only for this event. No spam.</p>
+<!--           <p class="text-xs text-gray-500">Your info is used only for this event. No spam.</p> -->
         </form>
       </div>
     </div>
@@ -467,21 +467,21 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Store availability dates selected
-    const availability = [];
+    // // Store availability dates selected
+    // const availability = [];
 
-    // Map dates to time slots
-    function getTimeSlot(dateStr) {
-      if (dateStr === '2025-08-15') return '10-12 PM ET';
-      if (dateStr === '2025-08-16') return '1-3 PM ET';
-      if (dateStr === '2025-08-22') return '10-12 PM ET';
-      if (dateStr === '2025-08-23') return '1-3 PM ET';
-      return '';
-    }
+    // // Map dates to time slots
+    // function getTimeSlot(dateStr) {
+    //   if (dateStr === '2025-08-15') return '10-12 PM ET';
+    //   if (dateStr === '2025-08-16') return '1-3 PM ET';
+    //   if (dateStr === '2025-08-22') return '10-12 PM ET';
+    //   if (dateStr === '2025-08-23') return '1-3 PM ET';
+    //   return '';
+    // }
 
-    const dateSelect = document.getElementById('dateSelect');
-    const addAvailabilityBtn = document.getElementById('addAvailabilityBtn');
-    const availabilityList = document.getElementById('availabilityList');
+    // const dateSelect = document.getElementById('dateSelect');
+    // const addAvailabilityBtn = document.getElementById('addAvailabilityBtn');
+    // const availabilityList = document.getElementById('availabilityList');
     const submitBtn = document.getElementById('submitBtn');
 
     // Enable/disable submit button based on form validation
@@ -501,15 +501,16 @@
         'videoConsent',
       ].every((id) => document.getElementById(id).checked);
 
-      const hasAvailability = availability.length > 0;
+      // const hasAvailability = availability.length > 0;
 
       if (
         name &&
         email &&
         city &&
         country &&
-        consents &&
-        hasAvailability
+        consents 
+        // &&
+        // hasAvailability
       ) {
         submitBtn.disabled = false;
         submitBtn.classList.remove('bg-gray-400', 'cursor-not-allowed');
@@ -534,18 +535,18 @@
       return age;
     }
 
-    // Add availability date/time to list
-    addAvailabilityBtn.addEventListener('click', () => {
-      const selectedDate = dateSelect.value;
-      if (!selectedDate) {
-        alert('Please select a date before adding.');
-        return;
-      }
-      if (availability.includes(selectedDate)) {
-        alert('You have already added this date.');
-        return;
-      }
-      availability.push(selectedDate);
+    // // Add availability date/time to list
+    // addAvailabilityBtn.addEventListener('click', () => {
+    //   const selectedDate = dateSelect.value;
+    //   if (!selectedDate) {
+    //     alert('Please select a date before adding.');
+    //     return;
+    //   }
+    //   if (availability.includes(selectedDate)) {
+    //     alert('You have already added this date.');
+    //     return;
+    //   }
+    //   availability.push(selectedDate);
 
       // Update display
       const timeSlot = getTimeSlot(selectedDate);
